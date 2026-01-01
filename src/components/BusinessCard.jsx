@@ -28,8 +28,8 @@ const BusinessCard = () => {
                         {/* Decorative Glow */}
                         <div className="absolute top-[-50%] left-[-50%] w-full h-full bg-[#D4AF37]/5 blur-3xl rounded-full"></div>
 
-                        {/* Left Side: Logo Area */}
-                        <div className="flex flex-col items-center justify-center flex-1 text-center sm:text-left z-10 sm:border-r border-[#D4AF37]/30 sm:pr-6 w-full sm:w-auto mb-4 sm:mb-0">
+                        {/* Left Side: Logo Area - Hidden on Mobile */}
+                        <div className="hidden sm:flex flex-col items-center justify-center flex-1 text-center sm:text-left z-10 sm:border-r border-[#D4AF37]/30 sm:pr-6 w-full sm:w-auto mb-4 sm:mb-0">
                             {/* Logo Icon Mockup */}
                             <div className="text-4xl sm:text-5xl mb-2">
                                 <span className="material-symbols-outlined text-[#D4AF37]" style={{ fontSize: 'inherit' }}>home_app_logo</span>
@@ -41,23 +41,26 @@ const BusinessCard = () => {
                         </div>
 
                         {/* Right Side: Contact Details */}
-                        <div className="flex flex-col justify-center flex-1 sm:pl-6 w-full z-10 space-y-3">
-                            <div className="flex items-center gap-3">
-                                <span className="material-symbols-outlined text-[#D4AF37] text-lg">call</span>
-                                <div className="text-xs sm:text-sm text-white">
-                                    <p>7278087172</p>
-                                    <p>9171837878</p>
+                        <div className="flex flex-col justify-center w-full z-10 h-full sm:h-auto sm:pl-6">
+                            {/* Mobile: Centered Block, Left Aligned Items */}
+                            <div className="w-fit mx-auto sm:w-full sm:mx-0 flex flex-col space-y-4 sm:space-y-3">
+                                <div className="flex items-center gap-3">
+                                    <span className="material-symbols-outlined text-[#D4AF37] text-2xl sm:text-lg">call</span>
+                                    <div className="text-sm sm:text-sm text-white text-left">
+                                        <p>7278087172</p>
+                                        <p>9171837878</p>
+                                    </div>
                                 </div>
-                            </div>
 
-                            <div className="flex items-center gap-3">
-                                <span className="material-symbols-outlined text-[#D4AF37] text-lg">mail</span>
-                                <p className="text-xs sm:text-sm text-white">royaltouchup3@gmail.com</p>
-                            </div>
+                                <div className="flex items-center gap-3">
+                                    <span className="material-symbols-outlined text-[#D4AF37] text-2xl sm:text-lg">mail</span>
+                                    <p className="text-sm sm:text-sm text-white text-left">royaltouchup3@gmail.com</p>
+                                </div>
 
-                            <div className="flex items-center gap-3">
-                                <span className="material-symbols-outlined text-[#D4AF37] text-lg">public</span>
-                                <p className="text-xs sm:text-sm text-white">royaltouchup.co.in</p>
+                                <div className="flex items-center gap-3">
+                                    <span className="material-symbols-outlined text-[#D4AF37] text-2xl sm:text-lg">public</span>
+                                    <p className="text-sm sm:text-sm text-white text-left">royaltouchup.co.in</p>
+                                </div>
                             </div>
                         </div>
 

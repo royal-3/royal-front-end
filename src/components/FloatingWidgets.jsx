@@ -2,10 +2,11 @@ import React, { useState, useEffect } from 'react';
 import ConsultationForm from './ConsultationForm';
 
 const FloatingWidgets = () => {
+    const [isFormOpen, setIsFormOpen] = useState(false);
     const [isVisible, setIsVisible] = useState(false);
-    const [isFormClosed, setIsFormClosed] = useState(false);
 
     useEffect(() => {
+        // Show the button after scrolling down a bit
         const toggleVisibility = () => {
             if (window.scrollY > 300) {
                 setIsVisible(true);
@@ -15,12 +16,11 @@ const FloatingWidgets = () => {
         };
 
         window.addEventListener('scroll', toggleVisibility);
-
         return () => window.removeEventListener('scroll', toggleVisibility);
     }, []);
 
-    const handleFormClose = () => {
-        setIsFormClosed(true);
+    const toggleForm = () => {
+        setIsFormOpen(!isFormOpen);
     };
 
     if (!isVisible) {
@@ -29,14 +29,29 @@ const FloatingWidgets = () => {
 
     return (
         <>
-            {/* Slide-in Quote Form - Bottom Right Side */}
+            {/* Left Side Trigger Button */}
+            <div className="fixed bottom-6 left-6 z-50">
+                <button
+                    onClick={toggleForm}
+                    className="flex items-center gap-2 px-4 py-3 bg-primary text-white font-bold rounded-full shadow-lg hover:bg-primary-dark transition-all duration-300 hover:scale-105 hover:shadow-primary/50"
+                >
+                    <span className="material-symbols-outlined">edit_document</span>
+                    <span className="hidden sm:inline">Get a Quote</span>
+                </button>
+            </div>
+
+            {/* Slide-in Quote Form - Bottom Left (just above button or center) */}
+            {/* User requested "in touch then the quote card". Let's show it near the button or centered. 
+                Original was bottom-right. Let's keep it somewhat near the trigger or center screen for focus.
+                Let's make it center-screen or slide from left. Slide from left seems appropriate given the button is on left.
+            */}
             <div
-                className={`fixed top-1/2 -translate-y-1/2 right-4 z-40 transition-transform duration-500 ease-in-out ${isVisible && !isFormClosed ? 'translate-x-0' : 'translate-x-[calc(100%+2rem)]'
+                className={`fixed top-1/2 -translate-y-1/2 left-4 z-40 transition-transform duration-500 ease-in-out ${isFormOpen ? 'translate-x-0' : '-translate-x-[calc(100%+2rem)]'
                     }`}
             >
-                <div className="bg-surface-light border border-white/10 rounded-2xl w-full max-w-sm p-6 relative shadow-2xl">
+                <div className="bg-surface-light border border-white/10 rounded-2xl w-full max-w-sm p-6 relative shadow-2xl ml-4 sm:ml-0">
                     <button
-                        onClick={handleFormClose}
+                        onClick={toggleForm}
                         className="absolute top-2 right-2 text-gray-400 hover:text-white bg-black/50 rounded-full p-1 transition-colors"
                         title="Close"
                     >
@@ -44,7 +59,7 @@ const FloatingWidgets = () => {
                     </button>
 
                     <h3 className="text-xl font-bold text-white mb-4">Book a Free Consultation</h3>
-                    <ConsultationForm onSuccess={handleFormClose} />
+                    <ConsultationForm onSuccess={() => setIsFormOpen(false)} />
                 </div>
             </div>
 
