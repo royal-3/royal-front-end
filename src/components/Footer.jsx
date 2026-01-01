@@ -33,11 +33,11 @@ const Footer = () => {
                             </div>
                             <div className="flex items-center gap-3 text-gray-400 text-sm group">
                                 <span className="material-symbols-outlined text-base group-hover:text-primary transition-colors">call</span>
-                                <span>+91 1234567890</span>
+                                <span>+91 7278087172</span>
                             </div>
                             <div className="flex items-center gap-3 text-gray-400 text-sm group">
                                 <span className="material-symbols-outlined text-base group-hover:text-primary transition-colors">mail</span>
-                                <span>info@royaltouchup.co.in</span>
+                                <span>royaltouchup3@gmail.com</span>
                             </div>
                         </div>
                     </div>
