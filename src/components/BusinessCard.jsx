@@ -29,14 +29,15 @@ const BusinessCard = () => {
                         <div className="absolute top-[-50%] left-[-50%] w-full h-full bg-[#D4AF37]/5 blur-3xl rounded-full"></div>
 
                         {/* Left Side: Logo Area */}
-                        <div className="flex flex-col items-center justify-center text-center sm:text-left z-10 w-full sm:w-1/2 h-full shrink-0 border-b sm:border-b-0 sm:border-r border-[#D4AF37]/20 pb-4 sm:pb-0 sm:pr-4">
+                        {/* Left Side: Logo Area */}
+                        <div className="hidden sm:flex flex-col items-center justify-center text-center sm:text-left z-10 w-full sm:w-1/2 sm:h-full shrink-0 border-b sm:border-b-0 sm:border-r border-[#D4AF37]/20 sm:pr-4">
                             <img src="/logo.jpg" alt="Royal Touchup Logo" className="h-[80%] w-auto object-contain contrast-125 brightness-90" />
                         </div>
 
                         {/* Right Side: Contact Details */}
-                        <div className="flex flex-col justify-center items-center w-full sm:w-1/2 h-full z-10 sm:pl-4 pt-4 sm:pt-0">
+                        <div className="flex flex-col justify-center items-center w-full sm:w-1/2 h-full z-10 sm:pl-4">
                             {/* Mobile: Centered Block, Left Aligned Items */}
-                            <div className="w-fit mx-auto flex flex-col space-y-3 sm:space-y-4">
+                            <div className="w-fit mx-auto flex flex-col space-y-4 sm:space-y-4">
                                 <div className="flex items-center gap-3">
                                     <span className="material-symbols-outlined text-[#D4AF37] text-xl sm:text-2xl">call</span>
                                     <div className="text-xs sm:text-sm text-white text-left">
