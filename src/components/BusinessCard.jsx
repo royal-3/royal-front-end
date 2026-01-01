@@ -39,7 +39,7 @@ const BusinessCard = () => {
                             <div className="w-fit mx-auto flex flex-col space-y-3 sm:space-y-4">
                                 <div className="flex items-center gap-3">
                                     <span className="material-symbols-outlined text-[#D4AF37] text-xl sm:text-2xl">call</span>
-                                    <div className="text-sm sm:text-base text-white text-left">
+                                    <div className="text-xs sm:text-sm text-white text-left">
                                         <p>7278087172</p>
                                         <p>9171837878</p>
                                     </div>
@@ -47,12 +47,12 @@ const BusinessCard = () => {
 
                                 <div className="flex items-center gap-3">
                                     <span className="material-symbols-outlined text-[#D4AF37] text-xl sm:text-2xl">mail</span>
-                                    <p className="text-sm sm:text-base text-white text-left break-all">royaltouchup3@gmail.com</p>
+                                    <p className="text-xs sm:text-sm text-white text-left break-all">royaltouchup3@gmail.com</p>
                                 </div>
 
                                 <div className="flex items-center gap-3">
                                     <span className="material-symbols-outlined text-[#D4AF37] text-xl sm:text-2xl">public</span>
-                                    <p className="text-sm sm:text-base text-white text-left">royaltouchup.co.in</p>
+                                    <p className="text-xs sm:text-sm text-white text-left">royaltouchup.co.in</p>
                                 </div>
                             </div>
                         </div>
@@ -76,7 +76,7 @@ const BusinessCard = () => {
                         </div>
 
                         {/* Content Grid */}
-                        <div className="grid grid-cols-2 gap-x-4 gap-y-2 flex-grow content-center items-center text-[10px] sm:text-xs font-semibold z-10">
+                        <div className="grid grid-cols-2 gap-x-4 gap-y-2 flex-grow content-center items-center text-xs sm:text-sm font-semibold z-10">
                             <div className="flex items-center gap-2"><span className="text-[#D4AF37]">&gt;</span> <span className="text-white">FALSE CEILING</span></div>
                             <div className="flex items-center gap-2 justify-end"><span className="text-white">WARDROBE DESIGN</span> <span className="text-[#D4AF37]">&lt;</span></div>
 
