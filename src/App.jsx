@@ -6,6 +6,7 @@ import ConsultationModal from './components/ConsultationModal';
 import FloatingWidgets from './components/FloatingWidgets';
 import Home from './pages/Home';
 import RecentWorksPage from './pages/RecentWorksPage';
+import GalleryPage from './pages/GalleryPage';
 
 function App() {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -21,6 +22,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home onOpenConsultation={openModal} />} />
             <Route path="/recent-works" element={<RecentWorksPage />} />
+            <Route path="/gallery" element={<GalleryPage />} />
           </Routes>
         </main>
         <Footer />
