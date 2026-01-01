@@ -23,43 +23,36 @@ const BusinessCard = () => {
                     style={{ backfaceVisibility: 'hidden' }}
                 >
                     {/* Container with Black Background & Gold Border */}
-                    <div className="w-full h-full bg-[#111] rounded-2xl border-2 border-[#D4AF37] p-6 text-[#D4AF37] shadow-xl flex flex-col sm:flex-row items-center justify-between relative overflow-hidden">
+                    <div className="w-full h-full bg-black rounded-2xl border-2 border-[#D4AF37] p-6 text-[#D4AF37] shadow-xl flex flex-col sm:flex-row items-center justify-between relative overflow-hidden">
 
                         {/* Decorative Glow */}
                         <div className="absolute top-[-50%] left-[-50%] w-full h-full bg-[#D4AF37]/5 blur-3xl rounded-full"></div>
 
-                        {/* Left Side: Logo Area - Hidden on Mobile */}
-                        <div className="hidden sm:flex flex-col items-center justify-center flex-1 text-center sm:text-left z-10 sm:border-r border-[#D4AF37]/30 sm:pr-6 w-full sm:w-auto mb-4 sm:mb-0">
-                            {/* Logo Icon Mockup */}
-                            <div className="text-4xl sm:text-5xl mb-2">
-                                <span className="material-symbols-outlined text-[#D4AF37]" style={{ fontSize: 'inherit' }}>home_app_logo</span>
-                            </div>
-
-                            <h2 className="text-2xl sm:text-3xl font-bold tracking-wider leading-none mb-1">RT</h2>
-                            <h3 className="text-lg sm:text-xl font-semibold tracking-widest whitespace-nowrap">ROYAL TOUCHUP</h3>
-                            <p className="text-[8px] sm:text-[10px] tracking-[0.2em] mt-1 opacity-80 text-white">COMFORT MEETS CREATIVITY</p>
+                        {/* Left Side: Logo Area */}
+                        <div className="flex flex-col items-center justify-center text-center sm:text-left z-10 w-full sm:w-1/2 h-full shrink-0 border-b sm:border-b-0 sm:border-r border-[#D4AF37]/20 pb-4 sm:pb-0 sm:pr-4">
+                            <img src="/logo.jpg" alt="Royal Touchup Logo" className="h-[80%] w-auto object-contain contrast-125 brightness-90" />
                         </div>
 
                         {/* Right Side: Contact Details */}
-                        <div className="flex flex-col justify-center w-full z-10 h-full sm:h-auto sm:pl-6">
+                        <div className="flex flex-col justify-center items-center w-full sm:w-1/2 h-full z-10 sm:pl-4 pt-4 sm:pt-0">
                             {/* Mobile: Centered Block, Left Aligned Items */}
-                            <div className="w-fit mx-auto sm:w-full sm:mx-0 flex flex-col space-y-4 sm:space-y-3">
+                            <div className="w-fit mx-auto flex flex-col space-y-3 sm:space-y-4">
                                 <div className="flex items-center gap-3">
-                                    <span className="material-symbols-outlined text-[#D4AF37] text-2xl sm:text-lg">call</span>
-                                    <div className="text-sm sm:text-sm text-white text-left">
+                                    <span className="material-symbols-outlined text-[#D4AF37] text-xl sm:text-2xl">call</span>
+                                    <div className="text-sm sm:text-base text-white text-left">
                                         <p>7278087172</p>
                                         <p>9171837878</p>
                                     </div>
                                 </div>
 
                                 <div className="flex items-center gap-3">
-                                    <span className="material-symbols-outlined text-[#D4AF37] text-2xl sm:text-lg">mail</span>
-                                    <p className="text-sm sm:text-sm text-white text-left">royaltouchup3@gmail.com</p>
+                                    <span className="material-symbols-outlined text-[#D4AF37] text-xl sm:text-2xl">mail</span>
+                                    <p className="text-sm sm:text-base text-white text-left break-all">royaltouchup3@gmail.com</p>
                                 </div>
 
                                 <div className="flex items-center gap-3">
-                                    <span className="material-symbols-outlined text-[#D4AF37] text-2xl sm:text-lg">public</span>
-                                    <p className="text-sm sm:text-sm text-white text-left">royaltouchup.co.in</p>
+                                    <span className="material-symbols-outlined text-[#D4AF37] text-xl sm:text-2xl">public</span>
+                                    <p className="text-sm sm:text-base text-white text-left">royaltouchup.co.in</p>
                                 </div>
                             </div>
                         </div>
@@ -75,7 +68,7 @@ const BusinessCard = () => {
                     className="absolute inset-0 w-full h-full backface-hidden rotate-y-180"
                     style={{ backfaceVisibility: 'hidden', transform: 'rotateY(180deg)' }}
                 >
-                    <div className="w-full h-full bg-[#111] rounded-2xl border-2 border-[#D4AF37] p-6 text-[#D4AF37] shadow-xl flex flex-col relative overflow-hidden">
+                    <div className="w-full h-full bg-black rounded-2xl border-2 border-[#D4AF37] p-6 text-[#D4AF37] shadow-xl flex flex-col relative overflow-hidden">
 
                         {/* Header */}
                         <div className="text-center mb-4 z-10">
