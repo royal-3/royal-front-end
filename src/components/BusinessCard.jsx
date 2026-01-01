@@ -36,23 +36,23 @@ const BusinessCard = () => {
                         {/* Right Side: Contact Details */}
                         <div className="flex flex-col justify-center items-center w-1/2 h-full z-10 pl-2 sm:pl-4">
                             {/* Mobile: Centered Block, Left Aligned Items */}
-                            <div className="w-fit mx-auto flex flex-col space-y-2 sm:space-y-4">
-                                <div className="flex items-center gap-3">
-                                    <span className="material-symbols-outlined text-[#D4AF37] text-xl sm:text-2xl">call</span>
-                                    <div className="text-xs sm:text-sm text-white text-left">
+                            <div className="w-fit mx-auto flex flex-col space-y-1 sm:space-y-4">
+                                <div className="flex items-center gap-2 sm:gap-3">
+                                    <span className="material-symbols-outlined text-[#D4AF37] text-base sm:text-2xl">call</span>
+                                    <div className="text-[10px] sm:text-sm text-white text-left">
                                         <p>7278087172</p>
                                         <p>9171837878</p>
                                     </div>
                                 </div>
 
-                                <div className="flex items-center gap-3">
-                                    <span className="material-symbols-outlined text-[#D4AF37] text-xl sm:text-2xl">mail</span>
-                                    <p className="text-xs sm:text-sm text-white text-left break-all">royaltouchup3@gmail.com</p>
+                                <div className="flex items-center gap-2 sm:gap-3">
+                                    <span className="material-symbols-outlined text-[#D4AF37] text-base sm:text-2xl">mail</span>
+                                    <p className="text-[10px] sm:text-sm text-white text-left break-all">royaltouchup3@gmail.com</p>
                                 </div>
 
-                                <div className="flex items-center gap-3">
-                                    <span className="material-symbols-outlined text-[#D4AF37] text-xl sm:text-2xl">public</span>
-                                    <p className="text-xs sm:text-sm text-white text-left">royaltouchup.co.in</p>
+                                <div className="flex items-center gap-2 sm:gap-3">
+                                    <span className="material-symbols-outlined text-[#D4AF37] text-base sm:text-2xl">public</span>
+                                    <p className="text-[10px] sm:text-sm text-white text-left">royaltouchup.co.in</p>
                                 </div>
                             </div>
                         </div>
