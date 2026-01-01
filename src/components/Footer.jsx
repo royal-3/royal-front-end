@@ -16,12 +16,11 @@ const Footer = () => {
                     <div className="flex flex-col gap-4">
                         <h4 className="font-bold text-lg text-white">Quick Links</h4>
                         <div className="flex flex-col gap-2">
-                            <a href="#" className="text-gray-400 hover:text-primary transition-colors text-sm">Home</a>
-                            <a href="#about-us" className="text-gray-400 hover:text-primary transition-colors text-sm">About Us</a>
-                            <a href="#services" className="text-gray-400 hover:text-primary transition-colors text-sm">Services</a>
-                            <a href="#" className="text-gray-400 hover:text-primary transition-colors text-sm">FAQs</a>
-                            <a href="#" className="text-gray-400 hover:text-primary transition-colors text-sm">Review Us</a>
-                            <a href="#footer" className="text-gray-400 hover:text-primary transition-colors text-sm">Contact</a>
+                            <a href="/" className="text-gray-400 hover:text-primary transition-colors text-sm">Home</a>
+                            <a href="/#about-us" className="text-gray-400 hover:text-primary transition-colors text-sm">About Us</a>
+                            <a href="/#services" className="text-gray-400 hover:text-primary transition-colors text-sm">Services</a>
+                            <a href="/#faqs" className="text-gray-400 hover:text-primary transition-colors text-sm">FAQs</a>
+                            <a href="/#reviews" className="text-gray-400 hover:text-primary transition-colors text-sm">Review Us</a>
                         </div>
                     </div>
                     <div className="flex flex-col gap-4">
@@ -29,15 +28,15 @@ const Footer = () => {
                         <div className="flex flex-col gap-3">
                             <div className="flex items-start gap-3 text-gray-400 text-sm group">
                                 <span className="material-symbols-outlined text-base mt-0.5 group-hover:text-primary transition-colors">location_on</span>
-                                <span>Kalyani, West Bengal</span>
+                                <span>Kalyani, West Bengal - 741250</span>
                             </div>
                             <div className="flex items-center gap-3 text-gray-400 text-sm group">
                                 <span className="material-symbols-outlined text-base group-hover:text-primary transition-colors">call</span>
-                                <span>+91 7278087172</span>
+                                <span className="font-bold text-white">+91 7278087172</span>
                             </div>
                             <div className="flex items-center gap-3 text-gray-400 text-sm group">
                                 <span className="material-symbols-outlined text-base group-hover:text-primary transition-colors">mail</span>
-                                <span>royaltouchup3@gmail.com</span>
+                                <span className="font-bold text-white">royaltouchup3@gmail.com</span>
                             </div>
                         </div>
                     </div>

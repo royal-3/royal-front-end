@@ -12,13 +12,12 @@ const Navbar = ({ onOpenConsultation }) => {
                     </div>
 
                     <div className="hidden lg:flex items-center space-x-8">
-                        <a href="#" className="text-white hover:text-primary transition-colors text-sm font-medium tracking-wide uppercase">Home</a>
+                        <a href="/" className="text-white hover:text-primary transition-colors text-sm font-medium tracking-wide uppercase">Home</a>
                         {/* Using IDs for sections for now as requested by user context implies single page sections mostly */}
-                        <a href="#about-us" className="text-gray-300 hover:text-primary transition-colors text-sm font-medium tracking-wide uppercase">About Us</a>
-                        <a href="#services" className="text-gray-300 hover:text-primary transition-colors text-sm font-medium tracking-wide uppercase">Services</a>
-                        <a href="#footer" className="text-gray-300 hover:text-primary transition-colors text-sm font-medium tracking-wide uppercase">Contact</a>
-                        <a href="#faqs" className="text-gray-300 hover:text-primary transition-colors text-sm font-medium tracking-wide uppercase">FAQs</a>
-                        <a href="#" className="text-gray-300 hover:text-primary transition-colors text-sm font-medium tracking-wide uppercase">Review Us</a>
+                        <a href="/#about-us" className="text-gray-300 hover:text-primary transition-colors text-sm font-medium tracking-wide uppercase">About Us</a>
+                        <a href="/#services" className="text-gray-300 hover:text-primary transition-colors text-sm font-medium tracking-wide uppercase">Services</a>
+                        <a href="/#faqs" className="text-gray-300 hover:text-primary transition-colors text-sm font-medium tracking-wide uppercase">FAQs</a>
+                        <a href="/#reviews" className="text-gray-300 hover:text-primary transition-colors text-sm font-medium tracking-wide uppercase">Review Us</a>
                     </div>
                     <div className="hidden sm:flex items-center">
                         <button
@@ -42,13 +41,12 @@ const Navbar = ({ onOpenConsultation }) => {
             {isMenuOpen && (
                 <div className="lg:hidden bg-surface-light border-t border-white/10 p-4 absolute w-full left-0">
                     <div className="flex flex-col gap-4">
-                        <a href="#" className="text-gray-300 text-sm font-medium hover:text-primary transition-colors">Home</a>
-                        <a href="#about" className="text-gray-300 text-sm font-medium hover:text-primary transition-colors">About</a>
-                        <a href="#recent-works" className="text-gray-300 text-sm font-medium hover:text-primary transition-colors">Recent Works</a>
-                        <a href="#services" className="text-gray-300 text-sm font-medium hover:text-primary transition-colors">Services</a>
-                        <a href="#gallery" className="text-gray-300 text-sm font-medium hover:text-primary transition-colors">Gallery</a>
-                        <a href="#faqs" className="text-gray-300 text-sm font-medium hover:text-primary transition-colors">FAQs</a>
-                        <a href="#footer" className="text-gray-300 text-sm font-medium hover:text-primary transition-colors">Contact</a>
+                        <a href="/" className="text-gray-300 text-sm font-medium hover:text-primary transition-colors">Home</a>
+                        <a href="/#about-us" className="text-gray-300 text-sm font-medium hover:text-primary transition-colors">About</a>
+                        <a href="/#recent-works" className="text-gray-300 text-sm font-medium hover:text-primary transition-colors">Recent Works</a>
+                        <a href="/#services" className="text-gray-300 text-sm font-medium hover:text-primary transition-colors">Services</a>
+                        <a href="/gallery" className="text-gray-300 text-sm font-medium hover:text-primary transition-colors">Gallery</a>
+                        <a href="/#faqs" className="text-gray-300 text-sm font-medium hover:text-primary transition-colors">FAQs</a>
                         <button
                             onClick={onOpenConsultation}
                             className="bg-metallic text-black text-sm font-bold py-2.5 px-6 rounded-lg w-full"

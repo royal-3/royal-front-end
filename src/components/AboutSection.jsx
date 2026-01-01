@@ -61,11 +61,7 @@ const AboutSection = () => {
                             </p>
                         </div>
                     </div>
-                    <div className="flex justify-center mt-10">
-                        <button className="text-primary hover:text-white font-bold uppercase tracking-wider text-sm border-b-2 border-primary hover:border-white pb-1 transition-all">
-                            Learn More
-                        </button>
-                    </div>
+
                 </div>
 
             </div>
