@@ -1,4 +1,5 @@
 import React from 'react';
+import BusinessCard from './BusinessCard';
 
 const AboutSection = () => {
     return (
@@ -26,14 +27,9 @@ const AboutSection = () => {
                         </div>
                     </div>
                     {/* Placeholder for an About Image if user requests later, for now maybe a decorative element or text large */}
-                    <div className="w-full md:w-1/2 flex justify-center">
-                        <div className="relative p-1 bg-metallic rounded-2xl rotate-3">
-                            <div className="bg-surface-light p-10 rounded-xl -rotate-3 border border-white/10">
-                                <span className="material-symbols-outlined text-6xl text-primary mb-4">architecture</span>
-                                <h4 className="text-xl font-bold text-white mb-2">Personalized Design</h4>
-                                <p className="text-gray-400">Tailored to your taste, lifestyle, and budget.</p>
-                            </div>
-                        </div>
+                    {/* Business Card with Flip Animation */}
+                    <div className="w-full md:w-1/2 flex justify-center perspective-1000">
+                        <BusinessCard />
                     </div>
                 </div>
 
