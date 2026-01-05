@@ -66,7 +66,7 @@ const FloatingWidgets = () => {
             {/* WhatsApp Button - Bottom Right (Fixed) */}
             <div className="fixed bottom-6 right-6 z-50">
                 <a
-                    href="https://wa.me/917278087172" // Replace with actual number
+                    href="https://wa.me/917278087172?text=Hi%20Royal%20Touchup!%20%F0%9F%91%8B%20I'm%20interested%20in%20interior%20design%20services%20for%20my%20property.%20Could%20you%20please%20share%20more%20details%3F%20%E2%9C%A8"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center justify-center w-14 h-14 bg-[#25D366] rounded-full shadow-lg hover:scale-110 transition-transform hover:shadow-[#25D366]/50"
